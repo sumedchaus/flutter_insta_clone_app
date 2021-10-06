@@ -34,14 +34,17 @@ class ProductTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(1.0),
-      child: Container(
-        color: Colors.blue[200],
+    return Container(
+      color: Colors.grey,
+      child: Padding(
+        padding: const EdgeInsets.all(1.0),
+        child: Container(
+          color: Colors.blue[200],
 
-        child: Image.network(
-          product.imageLink,
-          fit: BoxFit.cover,
+          child: Image.network(
+            product.imageLink,
+            fit: BoxFit.cover,
+          ),
         ),
       ),
     );

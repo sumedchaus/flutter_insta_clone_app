@@ -10,6 +10,8 @@ class AssessmentController extends GetxController {
   String progress = "";
   Dio dio;
   var isLoading = false.obs;
+  int selectedIndex = 0;
+
 
 
   RxList<Welcome> listData = RxList<Welcome>([]);
@@ -25,6 +27,10 @@ class AssessmentController extends GetxController {
     AssessmentService.fetchData();
     super.onInit();
     dio = Dio();
+  }
+
+  void _onItemTapped(int index) {
+      selectedIndex = index;
   }
 
 

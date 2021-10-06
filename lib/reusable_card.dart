@@ -25,12 +25,19 @@ class ReusableCard extends StatelessWidget {
                   width: 10,
                 ),
                 CircleAvatar(
-                    backgroundColor: Colors.transparent,
-                    child: Image.network(
-                      welcome.imageLink,
-                    )),
+                  radius: 27,
+                  backgroundColor: Colors.blueGrey,
+                  child: CircleAvatar(
+                    radius: 25,
+                      backgroundColor: Colors.red,
+                      backgroundImage: NetworkImage(welcome.imageLink),
+                      // child: Image.network(
+                      //   welcome.imageLink,
+                      // )
+                  ),
+                ),
                 SizedBox(
-                  width: 5,
+                  width: 10,
                 ),
                 Text(
                   welcome.productType,
@@ -50,9 +57,9 @@ class ReusableCard extends StatelessWidget {
           width: double.infinity,
           color: Colors.grey,
             height: 400,
-            child: assessmentController.isLoading.value
-                ? Center(child: CircularProgressIndicator())
-                : Image.network(welcome.imageLink)),
+            child: Image.network(welcome.imageLink,
+
+            )),
         SizedBox(
           height: 20,
         ),

@@ -18,12 +18,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         appBarTheme: AppBarTheme(
               textTheme: TextTheme(headline6:   TextStyle(color: Colors.black,fontSize: 20)),
-          color: Color(0xfff8faf8),
+          // color: Color(0xfff8faf8),
           elevation: 0
+
 
 
       ),
 
+        buttonTheme:ButtonThemeData(
+          buttonColor: Colors.black
+
+        ) ,
         primarySwatch: Colors.blue,
         // buttonColor: Colors.black,
           primaryColor: Colors.black,
@@ -34,6 +39,7 @@ class MyApp extends StatelessWidget {
 
       ),
       home: SplashScreenPage(),
+
     );
   }
 }

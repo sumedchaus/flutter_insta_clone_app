@@ -3,6 +3,8 @@ import 'package:flutter_insta_clone_app/const.dart';
 import 'package:flutter_insta_clone_app/home_page.dart';
 import 'package:splashscreen/splashscreen.dart';
 
+import 'bottomPersistentTabView.dart';
+
 class SplashScreenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -10,7 +12,7 @@ class SplashScreenPage extends StatelessWidget {
       child: Container(
         child: SplashScreen(
           seconds: 4,
-          navigateAfterSeconds: HomePage(),
+          navigateAfterSeconds: BotttomPersistentTabView(),
           // title: new Text('GeeksForGeeks',textScaleFactor: 2,),
 
           useLoader: false,

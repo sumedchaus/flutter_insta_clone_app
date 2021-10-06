@@ -33,6 +33,8 @@ dependencies:
   get:
   dio:
   staggered_grid_view_flutter:
+  persistent_bottom_nav_bar: ^4.0.2 # bottom nav bar
+
 
 
 dev_dependencies:
